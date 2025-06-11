@@ -9,7 +9,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    setWindowTitle("MemoBoots");
+    setWindowTitle("MemoaBoots");
     resize(300, 150);
 
     QWidget *central = new QWidget(this);
