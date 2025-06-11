@@ -17,7 +17,9 @@ INCLUDEPATH += $$PWD/include
 ##########################################################
 SOURCES += \
     src/main.cpp \
-    src/MainWindow.cpp
+    src/MainWindow.cpp \
+    src/Card.cpp
 
 HEADERS += \
-    include/MainWindow.h
+    include/MainWindow.h \
+    include/Card.h

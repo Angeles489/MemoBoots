@@ -4,6 +4,8 @@
 #include <QMessageBox>
 #include <QLabel>
 
+#include "Card.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
@@ -21,11 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     QPushButton *button = new QPushButton("msj 1", this);
     vbox->addWidget(button);
 
-    QPushButton *button2 = new QPushButton("msj 2", this);
-    vbox->addWidget(button2);
-
     connect(button, &QPushButton::clicked, this, &MainWindow::on_buttonClicked);
-    connect(button2, &QPushButton::clicked, this, &MainWindow::on_button2Clicked);
 
     central->setLayout(vbox);
 }
@@ -36,10 +34,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_buttonClicked()
 {
-    QMessageBox::information(this, "Mensaje", "loba");
-}
-
-void MainWindow::on_button2Clicked()
-{
-    QMessageBox::information(this, "Mensaje", "loba 2");
+    Card *cardWindow = new Card();
+    cardWindow->show();
+    this->close(); // Cierra la ventana principal
 }
