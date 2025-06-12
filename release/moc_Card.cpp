@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../include/Card.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -39,12 +40,12 @@ template <> constexpr inline auto Card::qt_create_metaobjectdata<qt_meta_tag_ZN4
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Card",
-        "on_buttonCloseClicked",
+        "checkAnswer",
         ""
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'on_buttonCloseClicked'
+        // Slot 'checkAnswer'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
@@ -69,7 +70,7 @@ void Card::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     auto *_t = static_cast<Card *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->on_buttonCloseClicked(); break;
+        case 0: _t->checkAnswer(); break;
         default: ;
         }
     }

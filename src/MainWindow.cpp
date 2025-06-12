@@ -1,40 +1,39 @@
 #include "MainWindow.h"
-#include <QPushButton>
-#include <QVBoxLayout>
-#include <QMessageBox>
-#include <QLabel>
-
 #include "Card.h"
+#include <QVBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     setWindowTitle("MemoaBoots");
-    resize(300, 150);
+    resize(300, 200);
 
     QWidget *central = new QWidget(this);
     setCentralWidget(central);
 
     QVBoxLayout *vbox = new QVBoxLayout;
 
-    QLabel *label = new QLabel("Puchale play", this);
-    vbox->addWidget(label);
+    label_ = new QLabel("Púchale play", this);
+    vbox->addWidget(label_);
 
-    QPushButton *button = new QPushButton("msj 1", this);
-    vbox->addWidget(button);
+    button_ = new QPushButton("msj 1", this);
+    vbox->addWidget(button_);
+    connect(button_, &QPushButton::clicked, this, &MainWindow::on_buttonClicked);
 
-    connect(button, &QPushButton::clicked, this, &MainWindow::on_buttonClicked);
+    lineEdit_ = new QLineEdit(this);
+    vbox->addWidget(lineEdit_);
+
+    textEdit_ = new QTextEdit(this);
+    vbox->addWidget(textEdit_);
 
     central->setLayout(vbox);
 }
 
-MainWindow::~MainWindow()
-{
-}
+MainWindow::~MainWindow() {}
 
 void MainWindow::on_buttonClicked()
 {
     Card *cardWindow = new Card();
     cardWindow->show();
-    this->close(); // Cierra la ventana principal
+    this->close();
 }

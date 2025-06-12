@@ -16,6 +16,7 @@ public:
 
 private slots:
     void on_buttonClicked();
+
 private:
     QLabel      *label_;
     QPushButton *button_;

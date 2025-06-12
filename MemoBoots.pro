@@ -18,8 +18,12 @@ INCLUDEPATH += $$PWD/include
 SOURCES += \
     src/main.cpp \
     src/MainWindow.cpp \
-    src/Card.cpp
+    src/Card.cpp \
+    src/Question.cpp \
+    src/TheoryQuestion.cpp
 
 HEADERS += \
     include/MainWindow.h \
-    include/Card.h
+    include/Card.h \
+    include/Question.h \
+    include/TheoryQuestion.h
