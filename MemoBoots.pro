@@ -20,10 +20,14 @@ SOURCES += \
     src/MainWindow.cpp \
     src/Card.cpp \
     src/Question.cpp \
-    src/TheoryQuestion.cpp
+    src/TheoryQuestion.cpp \
+    src/User.cpp \
+    src/WelcomeWindow.cpp
 
 HEADERS += \
     include/MainWindow.h \
     include/Card.h \
     include/Question.h \
-    include/TheoryQuestion.h
+    include/TheoryQuestion.h \
+    include/User.h \
+    include/WelcomeWindow.h
