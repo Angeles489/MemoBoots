@@ -6,12 +6,13 @@
 #include <QVector>
 #include "Question.h"
 #include <QObject.h>
+#include "User.h"
 
 class Card : public QWidget {
     Q_OBJECT
 
 public:
-    explicit Card(QWidget *parent = nullptr);
+    explicit Card(User* user = nullptr, QWidget* parent = nullptr);
 
 private slots:
     void checkAnswer();
@@ -24,4 +25,6 @@ private:
 
     void loadQuestions();
     void showQuestion(int index);
+
+    User* user_;
 };

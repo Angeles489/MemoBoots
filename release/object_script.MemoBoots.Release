@@ -1,0 +1,10 @@
+release/main.o
+release/MainWindow.o
+release/Card.o
+release/Question.o
+release/TheoryQuestion.o
+release/User.o
+release/WelcomeWindow.o
+release/moc_MainWindow.o
+release/moc_Card.o
+release/moc_WelcomeWindow.o

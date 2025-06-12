@@ -1,0 +1,10 @@
+debug/main.o
+debug/MainWindow.o
+debug/Card.o
+debug/Question.o
+debug/TheoryQuestion.o
+debug/User.o
+debug/WelcomeWindow.o
+debug/moc_MainWindow.o
+debug/moc_Card.o
+debug/moc_WelcomeWindow.o
