@@ -307,7 +307,9 @@ Makefile: MemoBoots.pro ../../Qt/6.9.1/mingw_64/mkspecs/win32-g++/qmake.conf ../
 		../../Qt/6.9.1/mingw_64/mkspecs/features/lex.prf \
 		MemoBoots.pro \
 		../../Qt/6.9.1/mingw_64/lib/Qt6Widgets.prl \
+		../../Qt/6.9.1/mingw_64/lib/Qt6Multimedia.prl \
 		../../Qt/6.9.1/mingw_64/lib/Qt6Gui.prl \
+		../../Qt/6.9.1/mingw_64/lib/Qt6Network.prl \
 		../../Qt/6.9.1/mingw_64/lib/Qt6Core.prl \
 		../../Qt/6.9.1/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile MemoBoots.pro -spec win32-g++
@@ -548,7 +550,9 @@ Makefile: MemoBoots.pro ../../Qt/6.9.1/mingw_64/mkspecs/win32-g++/qmake.conf ../
 ../../Qt/6.9.1/mingw_64/mkspecs/features/lex.prf:
 MemoBoots.pro:
 ../../Qt/6.9.1/mingw_64/lib/Qt6Widgets.prl:
+../../Qt/6.9.1/mingw_64/lib/Qt6Multimedia.prl:
 ../../Qt/6.9.1/mingw_64/lib/Qt6Gui.prl:
+../../Qt/6.9.1/mingw_64/lib/Qt6Network.prl:
 ../../Qt/6.9.1/mingw_64/lib/Qt6Core.prl:
 ../../Qt/6.9.1/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE

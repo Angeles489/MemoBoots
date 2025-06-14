@@ -6,6 +6,7 @@ TARGET = MemoBoots
 
 QT += core gui widgets
 CONFIG += c++17 console
+QT += multimedia
 
 ##########################################################
 # Indicamos la ruta de include/ (para MainWindow.h, etc.)
